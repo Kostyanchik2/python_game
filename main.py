@@ -49,7 +49,10 @@ def Ru():
             else: 
                 print("Ошибка 404")
                 winsound.Beep(1000, 1000)
+                
 name = input("Ваше имя")
+password = input("Пароль")
+Ru()
         
         
 
