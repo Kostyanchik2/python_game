@@ -23,7 +23,9 @@ def Ru():
                 print(f"{File_one_C}    Файл.   15 ГБ ")
                 print(f"{Folder_three_C}.")
                 print(f"{File_two_C}")
-            elif papka == 1
+            elif papka == 1:
+                print(f"{name}")
+
         elif cmd == "help":
             print("dir - Посмотреть директорию")
             print("echo - показать текст")
@@ -47,6 +49,7 @@ def Ru():
             else: 
                 print("Ошибка 404")
                 winsound.Beep(1000, 1000)
+name = input("Ваше имя")
         
         
 
