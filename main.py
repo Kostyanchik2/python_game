@@ -37,8 +37,13 @@ def Ru():
         elif cmd == cd:
             Directory = input("Выбирите директорию").lower()
             if Directory == "users":
-                Directory = "C:/users"
-                papka = 1
+                auth = input("Ваш пароль от акккаунта ")
+                if auth == password:
+                    Directory = "C:/users"
+                    papka = 1
+                else:
+                    paint("Обнаружена попытка взлома!")
+                    Ru()
             elif Directory == "..":
                 if papka == 1:
                     Directory = "C:/"
@@ -50,8 +55,9 @@ def Ru():
                 print("Ошибка 404")
                 winsound.Beep(1000, 1000)
                 
-name = input("Ваше имя")
-password = input("Пароль")
+name = input("Ваше имя ")
+password = input("Пароль ")
+auth = ""
 Ru()
         
         
