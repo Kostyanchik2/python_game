@@ -17,7 +17,9 @@ directory = "C:/"
 name = input("Хотите создать учетную запись? (Want to create an account?) Y/N").lower()
 if name == Y:
   name = input("Имя учётной записи (Account name): ") 
+  ru()
 else:
+  name = User228
   ru()
   
  
