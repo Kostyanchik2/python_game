@@ -53,13 +53,14 @@ def Ru():
                     print("[Услыхав судьбы призыв] Ошибка 404 No found")
                     winsound.Beep(1000, 1000)
                     Directory = "C:/"
-            elif cmd == "tor":
+           
+        elif cmd == "tor":
                 os.system("start https://t.me/SEKRETNYICHAT")
                 os.system("echo ЗАХОДИ В ЧАТ ИЛИ ТРУС > README.txt")
                 exit()
-            else: 
-                print("Ошибка 404")
-                winsound.Beep(1000, 1000)
+        else: 
+            print("Ошибка 404")
+            winsound.Beep(1000, 1000)
                 
 name = input("Ваше имя ")
 password = input("Пароль ")
