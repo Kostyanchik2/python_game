@@ -59,6 +59,7 @@ name = input("Ваше имя ")
 password = input("Пароль ")
 auth = ""
 Ru()
+# Саня доделай команду tor
         
         
 
