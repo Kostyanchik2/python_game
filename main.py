@@ -9,13 +9,14 @@ File_two_C = "None"
 Folder_three_C = "None"
 papka = 0
 def Ru():
+    global Directory 
     while True:
         cmd = input(f"{Directory} > ")
         if cmd == "":
             print("[Услыхав судьбы призыв] Неизвестная ошибка")
             winsound.Beep(1000, 1000)
             time.sleep(5)
-            exit 
+            exit()
         if cmd == "dir":
             if papka == 0:
                 print(f"{Folder_one_C}    Папка.   700 Мб ")
@@ -30,11 +31,11 @@ def Ru():
             print("dir - Посмотреть директорию")
             print("echo - показать текст")
             print("cd - открыть директорию")
-        elif cmd == echo:
+        elif cmd == "echo":
             global tekst
             tekst = input("Введите текст: ")
             print(f"{tekst}")
-        elif cmd == cd:
+        elif cmd == "cd":
             Directory = input("Выбирите директорию").lower()
             if Directory == "users":
                 auth = input("Ваш пароль от акккаунта ")
@@ -42,7 +43,7 @@ def Ru():
                     Directory = "C:/users"
                     papka = 1
                 else:
-                    paint("Обнаружена попытка взлома!")
+                    print("Обнаружена попытка взлома!")
                     Ru()
             elif Directory == "..":
                 if papka == 1:
@@ -59,8 +60,8 @@ name = input("Ваше имя ")
 password = input("Пароль ")
 auth = ""
 Ru()
-# Саня доделай команду tor
-        
+# САНЯ ТЫ ЧЕ НЕ ДОДЕЛАЛ СКРИПТ, МЫ ТЕБЯ НА МЫЛО ПУСТИМ
+    
         
 
         
