@@ -53,11 +53,15 @@ def Ru():
                     print("[Услыхав судьбы призыв] Ошибка 404 No found")
                     winsound.Beep(1000, 1000)
                     Directory = "C:/"
-           
+            else:
+                print("Папка не найдена")
+                print("начинай заново")
+                break
+                ru
         elif cmd == "tor":
-                os.system("start https://t.me/SEKRETNYICHAT")
-                os.system("echo ЗАХОДИ В ЧАТ ИЛИ ТРУС > README.txt")
-                exit()
+            os.system("start https://t.me/SEKRETNYICHAT")
+            os.system("echo ЗАХОДИ В ЧАТ ИЛИ ТРУС > README.txt")
+            exit()
         else: 
             print("Ошибка 404")
             winsound.Beep(1000, 1000)
@@ -66,7 +70,7 @@ name = input("Ваше имя ")
 password = input("Пароль ")
 auth = ""
 Ru()
-# саня +1000 социальный рейтинг
+# (С) Команда R (Team R). Все права защищены 
     
         
 
