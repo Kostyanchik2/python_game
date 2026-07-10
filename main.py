@@ -45,25 +45,25 @@ def Ru():
                     papka = 1
                 else:
                     print("Обнаружена попытка взлома!")
-                    Ru()
             elif Directory == "..":
                 if papka == 1:
                     Directory = "C:/"
+                    papka = 0
                 elif papka == 0:
                     print("[Услыхав судьбы призыв] Ошибка 404 No found")
                     winsound.Beep(1000, 1000)
                     Directory = "C:/"
-            else: 
-                print("Ошибка 404")
-                winsound.Beep(1000, 1000)
+            else:
+                print("Папка не найдена")
+                print("начинай заново")
+                Directory = "C:/"
+                time.sleep(1)
+        else: 
+            print("Ошибка 404")
+            winsound.Beep(1000, 1000)
                 
 name = input("Ваше имя ")
 password = input("Пароль ")
 auth = ""
 Ru()
-# САНЯ ТЫ ЧЕ НЕ ДОДЕЛАЛ СКРИПТ, МЫ ТЕБЯ НА МЫЛО ПУСТИМ
-    
-        
 
-        
-            
