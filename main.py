@@ -12,7 +12,7 @@ def Ru():
     while True:
         cmd = input(f"{Directory} > ")
         if cmd == "":
-            print("[Услыхав судьбы призыв] Неизвестная ошибка")
+            print("Неизвестная ошибка")
             winsound.Beep(1000, 1000)
             time.sleep(5)
             exit 
@@ -48,7 +48,7 @@ def Ru():
                 if papka == 1:
                     Directory = "C:/"
                 elif papka == 0:
-                    print("[Услыхав судьбы призыв] Ошибка 404 No found")
+                    print("Ошибка 404 No found")
                     winsound.Beep(1000, 1000)
                     Directory = "C:/"
             else: 
