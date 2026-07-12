@@ -128,7 +128,7 @@ auth = ""
 Lang = input("Выбирите язык (Select language): Ru/En ").lower()
 if Lang == "ru":
     Ru()
-elif Lang == "en"
+elif Lang == "en":
     En()
         
         
