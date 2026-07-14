@@ -6,10 +6,18 @@ cmd = "Null"
 File_one_C = "Pagefile.sys"
 Folder_one_C = "users"
 Folder_two_C = "system32"
-File_two_C = "None"
-Folder_three_C = "None"
+File_two_C = ""
+Folder_three_C = ""
 papka = 0
 notepad = ""
+def save():
+    if notepadsave == "y":
+    if papka == 0:
+        File_two_C = "File.txt"
+        save_in_notepad = notepad
+    elif papka == 1:
+        File_one_users = "File.txt"
+        save_in_notepad = notepad
 def Ru():
     global File_one_users
     global Folder_one_users
@@ -21,6 +29,9 @@ def Ru():
     global File_two_C
     global Folder_three_C
     global papka
+    global save_in_notepad
+    save_in_notepad = ""
+    File_one_users = ""
     while True:
         cmd = input(f"{Directory} > ")
         if cmd == "Null":
@@ -63,13 +74,27 @@ def Ru():
                     print("Ошибка 404 No found")
                     winsound.Beep(1000, 1000)
                     Directory = "C:/"
-            elif cmd == "notepad":
-                print("Блокнот - Безымянный")
-                notepad = input("Впишите свой текст ")
-                global notepadsave
-                notepadsave = input("Сохранить? Y/N ").lower()
-                if notepadsave == "y":
-                    File_two_C = "File.txt"
+        elif cmd == "notepad":
+            print("Блокнот - Безымянный")
+            notepad = input("Впишите свой текст (Для открытия наберите open)")
+            global notepadsave
+            notepadsave = input("Сохранить? Y/N ").lower()
+            if notepad == "open":
+                if papka == 0:
+                    if File_two_C == "File.txt":
+                        notepad = input(f"Ваш текст: {save_in_notepad}, введите новый текст")
+                        notepadsave = input("Сохранить? Y/N ").lower()
+                        save()
+                    else:
+                        print("Ошибка 404")
+                        ru()
+            else:
+                save()
+                    
+                
+            
+
+
                     
                     
             else: 
